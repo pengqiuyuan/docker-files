@@ -8,11 +8,11 @@ Versions:
 
 ## Pulling
 
-    $ docker pull maluuba/jetty-java8
+    $ docker pull pengqiuyuan/docker-jetty-java8
 
 ## Running
 
-    $ docker run -d -p 8080:8080 -i -t maluuba/jetty-java8
+    $ docker run -d -p 8080:8080 -i -t pengqiuyuan/docker-jetty-java8
 
 Then point your browser at [http://localhost:8080/](http://localhost:8080/)
 or [http://192.168.59.103:8080/](http://192.168.59.103:8080/) if you are using boot2docker
@@ -24,7 +24,7 @@ Optionally you can create a local folder with sub-folders for: webapps, config a
     $mkdir /local/jetty/config
     $mkdir /local/jetty/contexts
     
-    $ docker run -d -p 8080:8080 -v /local/jetty:/etc/jetty -i -t maluuba/jetty-java8
+    $ docker run -d -p 8080:8080 -v /local/jetty:/etc/jetty -i -t pengqiuyuan/docker-jetty-java8
 
 
     
